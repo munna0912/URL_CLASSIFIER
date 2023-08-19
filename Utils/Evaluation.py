@@ -1,8 +1,5 @@
 from sklearn.metrics import confusion_matrix, accuracy_score, precision_score, recall_score, f1_score
-<<<<<<< HEAD
-=======
 from  Utils.DataProcessing import process_links
->>>>>>> main
 import numpy as np
 def round_th(a,th):
   if a<th:
@@ -37,9 +34,6 @@ def evaluate_model(model, test_dataset, th):
     f1 = f1_score(y_true, y_pred, average='weighted')
     print("F1 Score:", f1)
     
-<<<<<<< HEAD
-    return [cm,acc,prec,rec,f1]
-=======
     return [cm,acc,prec,rec,f1]
 
 def make_prediction(model, batch_size, Vectorize_Layer, links, th):
@@ -55,4 +49,3 @@ def make_prediction(model, batch_size, Vectorize_Layer, links, th):
       else:
         ans.append("Malicious")
   return ans
->>>>>>> main

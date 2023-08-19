@@ -187,4 +187,3 @@ I would like to extend my gratitude to the following entities and communities:
 Your contributions and support are integral to the success of this project. Thank you for being part of my effort to enhance cybersecurity through URL classification.
 
 Feel free to explore the project, provide feedback, to make the internet a safer place!
->>>>>>> main
