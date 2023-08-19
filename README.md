@@ -169,7 +169,7 @@ I welcome contributions to enhance the accuracy and functionality of the URL Cla
 
 - **Feedback**: Use the project interface to provide feedback on false URL classifications to help me refine the model.
 
-To contribute, please refer to the project's GitHub repository [here](https://github.com/your-username/url-classifier). <br>
+To contribute, please refer to the project's GitHub repository [here](https://github.com/munna0912/URL_CLASSIFIER.git). <br>
 If you have any questions or feedback about this project, you can contact me at munna0912@gmail.com or connect with me on [LinkedIn](https://www.linkedin.com/in/munna-ram-950a5b200/).<br>
 - [Munna Ram](https://github.com/munna0912) - Project Lead and Developer
 
