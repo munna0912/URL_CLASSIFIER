@@ -17,22 +17,12 @@ def preprocess_link(link):
     link = re.sub('[^A-Za-z0-9]+', '', link)
     return link
 
-<<<<<<< HEAD
-def steps_per_epoch(dataframe,batch_size):
-    return len(dataframe)//batch_size
-
-=======
->>>>>>> main
 def process_train_data(df,batch_size):
     df = create_features(df)
     df['url'] = df['url'].apply(preprocess_link)
     df = df.drop_duplicates(subset=['url'])
     df = df.dropna().reset_index(drop=True)
-<<<<<<< HEAD
-    ds = tf.data.Dataset.from_tensor_slices(((df['url'].values, df.iloc[:,1:-1].values), df['type'].values))
-=======
     ds = tf.data.Dataset.from_tensor_slices(((df['url'].values, df.iloc[:,2:].values), df['type'].values))
->>>>>>> main
     ds = ds.batch(batch_size)
     return ds
 
@@ -50,15 +40,8 @@ def process_data(df,batch_size, Vectorize_Layer):
     return ds
 
 def process_links(links,batch_size, Vectorize_Layer):
-<<<<<<< HEAD
-    df = pd.Dataframe()
-    df['url'] = links
-    # here type is not provided as these links type is to be predicted, so we are keeping 0 just only for maintaining dimensionality
-    df['type'] = 0
-=======
     df = pd.DataFrame()
     df['url'] = links
     # here type is not provided as these links type is to be predicted, so we are keeping -1 just only for maintaining dimensionality
     df['type'] = -1
->>>>>>> main
     return process_data(df,batch_size, Vectorize_Layer)
